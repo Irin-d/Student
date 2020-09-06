@@ -1,6 +1,7 @@
 #include <iostream>
 #include "ClassStudent.h"
 #include "CLI.h"
+#include "ExportToFile.h"
 
 using namespace std;
 
@@ -19,6 +20,9 @@ int main()
 {
     PrintWelcome();
 
+    const int SIZE = 3
+    Student students[SIZE];
+
     char symbol;
     do {
         PrintMenu();
@@ -29,12 +33,16 @@ int main()
             case '1':
                 break;
             case '2':
+                AddStudents(students, SIZE);
                 break;
             case '3':
                 break;
             case '4':
                 break;
             case '5':
+                break;
+            case '6':
+                Export(students, SIZE);
                 break;
             case '0':
                 PrintExit();
@@ -47,4 +55,3 @@ int main()
 
     system("pause");
 }
-
