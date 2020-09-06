@@ -20,7 +20,7 @@ int main()
 {
     PrintWelcome();
 
-    const int SIZE = 3
+    const int SIZE = -1
     Student students[SIZE];
 
     char symbol;
@@ -50,6 +50,10 @@ int main()
             default:
                 PrintError("Invalid menu item");
                 break;
+                
+                
+                
+                
         }
     } while (symbol != '0');
 
