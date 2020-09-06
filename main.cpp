@@ -50,10 +50,6 @@ int main()
             default:
                 PrintError("Invalid menu item");
                 break;
-                
-                
-                
-                
         }
     } while (symbol != '0');
 
